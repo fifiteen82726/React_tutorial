@@ -1,30 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<script src="build/react.js"></script>
-    <script src="build/react-dom.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+  <meta charset="UTF-8" />
+  <title>TodoApp</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.0.1/react.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.0.1/react-dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.js"></script>
 </head>
 <body>
-	<div id ="app"></div>
-	
+  <div id="app"></div>
+  
+  <script>window.App = {};</script>
+  <script type="text/babel" src= "TodoItem.js"></script>
+  <script type="text/babel" src="TodoList.js"></script>
+  <script type="text/babel" src="TodoInput.js"></script>
+  <script type="text/babel" src="TodoHeader.js"></script>
+  <script type="text/babel" src="./Todo.js"></script>
+  
 
-	<script type="text/babel">
-    // 3. 使用 ReactDOM.render()：
-    //    讓 `<h1>hello, world</h1>` 顯示在 `<div id="app">` 中
+  <script type="text/babel">
+    const { TodoApp } = window.App;
     ReactDOM.render(
-      <h1>hello, world</h1>,
+      <TodoApp />,
       document.getElementById('app')
     );
-
-     console.log("addddd");
   </script>
 </body>
-
-<script type="text/javascript">
- 
-</script>
- 
 </html>

@@ -1,5 +1,15 @@
+
+
+
+
 var CommentBox = React.createClass({
+
+
   render: function(){
+    var children = "as2"
+    var app = <div>{children}</div>;
+
+
     return(
       <div className= "commentBox">
         Hello! I am CommentBox!
@@ -12,18 +22,3 @@ ReactDOM.render(
   <CommentBox/>,
   document.getElementById('content')
 );
-
-// tutorial1.js
-// var CommentBox = React.createClass({
-//   render: function() {
-//     return (
-//       <div className="commentBox">
-//         Hello, world! I am a CommentBox.
-//       </div>
-//     );
-//   }
-// });
-// ReactDOM.render(
-//   <CommentBox />,
-//   document.getElementById('content')
-// );
