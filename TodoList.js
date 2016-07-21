@@ -8,15 +8,17 @@ class TodoList extends React.Component {
 			<h1>我的待辦清單</h1>
 			<span>哈囉，Jason：你有 99 項未完成待辦事項</span>
 			<ul>
-				<li>
-					<TodoItem />
-				</li>
-				<li>
-					<TodoItem />
-				</li>
-				<li>
-					<TodoItem />
-				</li>
+				
+					<TodoItem 
+					title = "Item 1"
+					complete= {false} />
+				
+					<TodoItem title = "Item 1"
+					complete= {false} />
+				
+					<TodoItem title = "Item 1"
+					complete= {false} />
+				
 				
 			</ul>
 			</div>
